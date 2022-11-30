@@ -14,7 +14,7 @@
 <body>
     <main>
         <section class="section-container">
-            <h1>Want to get rich? This is the most important thing you will ever read!</h1>
+            <h1>Want to get out of the rat race? This is the most important thing you will ever read!</h1>
 
             <ul>
                 <li class="li-green">💰 Land a job with a 8 figure salary</li>
@@ -36,16 +36,16 @@
             <button class="modal-close-btn" id="modal-close-btn">X</button>
         </div>
         <div class="modal-inner" id="modal-inner">
-            <h2>We ❤️ Your Data!</h2>
+            <h2 id="modal-title">Subscribe below to continue reading</h2>
             <p class="modal-text" id="modal-text">We have a strict policy on tracking and spamming: we will not use or
                 share your data. To use this site, enter your name and email address and accept our terms and
                 conditions.</p>
-            <form>
-                <input type="text" name="fullName" placeholder="Enter your full name" />
-                <input type="email" name="email" placeholder="Enter your email" />
+            <form id="login-form">
+                <input type="text" name="fullName" placeholder="Enter your full name" required/>
+                <input type="email" name="email" placeholder="Enter your email" required/>
                 <div class="modal-choice-btns" id="modal-choice-btns">
                     <button class="modal-btn">Accept</button>
-                    <button class="modal-btn">Decline</button>
+                    <button class="modal-btn" type="button">Decline</button>
 
 
                 </div>

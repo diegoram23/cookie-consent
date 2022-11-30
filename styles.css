@@ -6,7 +6,8 @@ html, body {
     margin: 0;
     padding: 5px;
     font-family: 'Roboto';
-    color: #222;
+    color: #2d2d2d;
+    background: floralwhite;
 }
 
 /* typography */

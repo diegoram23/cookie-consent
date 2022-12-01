@@ -39,7 +39,7 @@ loginForm.addEventListener('submit', (e) => {
     //Second modal message   
     setTimeout(() => {
         document.getElementById('uploadText').innerText = 'Hacking into your credit card information'
-    }, 2000);
+    }, 2800);
 
     //Final modal message
     setTimeout(() => {
@@ -50,5 +50,5 @@ loginForm.addEventListener('submit', (e) => {
         <img src="clown.gif" class="img" alt="Mr.Rogers donning on a clown mask">
         </div>
         `
-    }, 4200);
+    }, 5500);
 })

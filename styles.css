@@ -63,6 +63,11 @@ li {
     background-color: #FCF1FE
 }
 
+.venmo {
+    color: #008cff;
+    font-weight: bold;
+}
+
 /* layout */
 
 img {

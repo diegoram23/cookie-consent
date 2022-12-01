@@ -20,15 +20,15 @@ closeBtn.addEventListener('click', () => {
 loginForm.addEventListener('submit', (e) => {
     e.preventDefault()
     const loginFormData = new FormData(loginForm)
-    const fullName = loginFormData.get('fullName')
+    const name = loginFormData.get('fullName')
     modalText.innerHTML = `
     <div class="modal-inner-loading">
     <img src="loading.svg" class="loading">
     <p id="uploadText">
-        Uploading your data to the dark web...
+        Accessing your ip address...
     </p>
 </div>
-    ` 
+    `
     //Second modal message   
     setTimeout(() => {
         document.getElementById('uploadText').innerText = 'Hacking into your credit card information'
@@ -36,11 +36,12 @@ loginForm.addEventListener('submit', (e) => {
 
     //Final modal message
     setTimeout(() => {
-       modalInner.innerHTML = `<h2>Thanks<span class="modal-display-name"> ${fullName}</span>!</h2>
+        closeBtn.disabled = false
+        modalInner.innerHTML = `<h2>Thanks<span class="modal-display-name"> ${name}</span></h2>
         <p>You just got scammed</p>
         <div class="idiot-gif">
         <img src="clown.gif" class="img">
         </div>
         `
-    }, 4000);
+    }, 4200);
 })

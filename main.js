@@ -19,6 +19,8 @@ closeBtn.addEventListener('click', () => {
 //First modal message after users hits 'submit'
 loginForm.addEventListener('submit', (e) => {
     e.preventDefault()
+    const loginFormData = new FormData(loginForm)
+    const fullName = loginFormData.get('fullName')
     modalText.innerHTML = `
     <div class="modal-inner-loading">
     <img src="loading.svg" class="loading">
@@ -29,12 +31,12 @@ loginForm.addEventListener('submit', (e) => {
     ` 
     //Second modal message   
     setTimeout(() => {
-        document.getElementById('uploadText').innerText = 'Gathering your credit card information'
+        document.getElementById('uploadText').innerText = 'Hacking into your credit card information'
     }, 2000);
 
     //Final modal message
     setTimeout(() => {
-       modalInner.innerHTML = `<h2>Thanks you sucker! </h2>
+       modalInner.innerHTML = `<h2>Thanks<span class="modal-display-name"> ${fullName}</span>!</h2>
         <p>You just got scammed</p>
         <div class="idiot-gif">
         <img src="clown.gif" class="img">

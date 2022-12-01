@@ -43,7 +43,6 @@ loginForm.addEventListener('submit', (e) => {
 
     //Final modal message
     setTimeout(() => {
-        closeBtn.disabled = false
         modalInner.innerHTML = `<h2>Thanks<span class="modal-display-name"> ${name}</span></h2>
         <p>You just got scammed</p>
         <div class="idiot-gif">
@@ -51,4 +50,10 @@ loginForm.addEventListener('submit', (e) => {
         </div>
         `
     }, 5500);
+
+    //User can now exit modal
+    setTimeout(() => {
+        closeBtn.disabled = false
+
+    }, 7000);
 })
